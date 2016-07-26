@@ -1,0 +1,42 @@
+// The margins for the MASTHEAD
+
+$masthead-tiny-margin: 10px;
+
+@mixin masthead-margins {
+	padding: $masthead-tiny-margin;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding: $small-margin;}
+	@include breakpoint(medium) {padding: $medium-margin; }
+	@include breakpoint(large) {padding: $large-margin;}
+	@include breakpoint(huge) {padding: $huge-margin;}
+  */
+}
+
+
+
+// The margins for the CONTENT
+
+$tiny-margin: 27px;
+
+@mixin horiz-margins {
+	padding-left: $tiny-margin; padding-right: $tiny-margin;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding-left: $small-margin; padding-right: $small-margin}
+	@include breakpoint(medium) {padding-left: $medium-margin; padding-right: $medium-margin}
+	@include breakpoint(large) {padding-left: $large-margin; padding-right: $large-margin}
+	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
+  */
+}
+
+@mixin vert-margins {
+	padding-top: $tiny-margin; padding-bottom: $tiny-margin;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding-left: $small-margin; padding-right: $small-margin}
+	@include breakpoint(medium) {padding-left: $medium-margin; padding-right: $medium-margin}
+	@include breakpoint(large) {padding-left: $large-margin; padding-right: $large-margin}
+	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
+  */
+}

@@ -1,0 +1,114 @@
+/* The page body
+----------------------------------------------------------------------------- */
+
+.content {
+  @include horiz-margins;
+  margin-top: 30px;
+  p {clear: both;}
+  a:link, a:visited {
+    @include source-sans-bold;
+    margin-bottom: 12px;
+    padding: 15px 25px 18px 25px;
+    clear: both;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    &:hover, &:active {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+
+.section-label {
+  margin-left: 3px;
+  margin-bottom: 15px;
+}
+
+
+// The page titles for the help-with sections -- NOT BUTTONS
+.help-title {
+  @include source-sans-bold;
+  margin-bottom: 45px;
+  padding: 15px 25px 18px 25px;
+  clear: both;
+  color: #fff;
+  border: none;
+  border-radius: 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+}
+
+
+
+
+/* Help-with pages, colour changes
+----------------------------------------------------------------------------- */
+
+.pain {
+  color: $the-blue;
+  a:link, a:visited {
+    background-color: #fff;
+    color: $the-blue;
+    &:hover, &:active {
+      background-color: $the-blue;
+      color: #fff;
+    }
+  }
+  .help-title {
+    background-color: $the-blue;
+  }
+}
+
+.bleeding {
+  color: $the-pink;
+  a:link, a:visited {
+    background-color: #fff;
+    color: $the-pink;
+    &:hover, &:active {
+      background-color: $the-pink;
+      color: #fff;
+    }
+  }
+  .help-title {
+    background-color: $the-pink;
+  }
+}
+
+.baby {
+  color: $the-purple;
+  a:link, a:visited {
+    background-color: #fff;
+    color: $the-purple;
+    &:hover, &:active {
+      background-color: $the-purple;
+      color: #fff;
+    }
+  }
+  .help-title {
+    background-color: $the-purple;
+  }
+}
+
+.other {
+  color: $the-orange;
+  a:link, a:visited {
+    background-color: #fff;
+    color: $the-orange;
+    &:hover, &:active {
+      background-color: $the-orange;
+      color: #fff;
+    }
+  }
+  .help-title {
+    background-color: $the-orange;
+  }
+}

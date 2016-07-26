@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'source-sans-regular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source-sans-italic';
+  src: url("../fonts/sourcesanspro-it-webfont.eot");
+  src: url("../fonts/sourcesanspro-it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-it-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-it-webfont.woff") format("woff"), url("../fonts/sourcesanspro-it-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-it-webfont.svg#source_sans_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source-sans-bold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'source-sans-bold-italic';
+  src: url("../fonts/sourcesanspro-boldit-webfont.eot");
+  src: url("../fonts/sourcesanspro-boldit-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-boldit-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-boldit-webfont.woff") format("woff"), url("../fonts/sourcesanspro-boldit-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-boldit-webfont.svg#source_sans_probold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Colours
+----------------------------------------------------------------------------- */
+/* Basic typography
+----------------------------------------------------------------------------- */
+body {
+  font-family: 'source-sans-regular', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures; }
+
+h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, blockquote, pre {
+  font-weight: normal;
+  font-size: 1em; }
+
+body {
+  background-color: #f0efee; }
+
+/* The page header
+----------------------------------------------------------------------------- */
+.masthead {
+  padding: 10px;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding: $small-margin;}
+	@include breakpoint(medium) {padding: $medium-margin; }
+	@include breakpoint(large) {padding: $large-margin;}
+	@include breakpoint(huge) {padding: $huge-margin;}
+  */
+  height: 41px; }
+
+.the-logo {
+  float: left;
+  height: 41px; }
+
+.the-menu {
+  float: right;
+  height: 6px;
+  margin-right: 20px;
+  margin-top: 17px; }
+
+/* The page body
+----------------------------------------------------------------------------- */
+.content {
+  padding-left: 27px;
+  padding-right: 27px;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding-left: $small-margin; padding-right: $small-margin}
+	@include breakpoint(medium) {padding-left: $medium-margin; padding-right: $medium-margin}
+	@include breakpoint(large) {padding-left: $large-margin; padding-right: $large-margin}
+	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
+  */
+  margin-top: 30px; }
+  .content p {
+    clear: both; }
+  .content a:link, .content a:visited {
+    font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+    margin-bottom: 12px;
+    padding: 15px 25px 18px 25px;
+    clear: both;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    float: left; }
+    .content a:link:hover, .content a:link:active, .content a:visited:hover, .content a:visited:active {
+      background-color: #000;
+      color: #fff; }
+
+.section-label {
+  margin-left: 3px;
+  margin-bottom: 15px; }
+
+.help-title {
+  font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+  margin-bottom: 45px;
+  padding: 15px 25px 18px 25px;
+  clear: both;
+  color: #fff;
+  border: none;
+  border-radius: 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left; }
+
+/* Help-with pages, colour changes
+----------------------------------------------------------------------------- */
+.pain {
+  color: #1e96ff; }
+  .pain a:link, .pain a:visited {
+    background-color: #fff;
+    color: #1e96ff; }
+    .pain a:link:hover, .pain a:link:active, .pain a:visited:hover, .pain a:visited:active {
+      background-color: #1e96ff;
+      color: #fff; }
+  .pain .help-title {
+    background-color: #1e96ff; }
+
+.bleeding {
+  color: #fa46c8; }
+  .bleeding a:link, .bleeding a:visited {
+    background-color: #fff;
+    color: #fa46c8; }
+    .bleeding a:link:hover, .bleeding a:link:active, .bleeding a:visited:hover, .bleeding a:visited:active {
+      background-color: #fa46c8;
+      color: #fff; }
+  .bleeding .help-title {
+    background-color: #fa46c8; }
+
+.baby {
+  color: #b43cff; }
+  .baby a:link, .baby a:visited {
+    background-color: #fff;
+    color: #b43cff; }
+    .baby a:link:hover, .baby a:link:active, .baby a:visited:hover, .baby a:visited:active {
+      background-color: #b43cff;
+      color: #fff; }
+  .baby .help-title {
+    background-color: #b43cff; }
+
+.other {
+  color: #fa7e00; }
+  .other a:link, .other a:visited {
+    background-color: #fff;
+    color: #fa7e00; }
+    .other a:link:hover, .other a:link:active, .other a:visited:hover, .other a:visited:active {
+      background-color: #fa7e00;
+      color: #fff; }
+  .other .help-title {
+    background-color: #fa7e00; }

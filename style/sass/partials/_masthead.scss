@@ -1,0 +1,20 @@
+/* The page header
+----------------------------------------------------------------------------- */
+
+.masthead {
+  @include masthead-margins;
+  height: 41px;
+  //background-color: red;
+}
+
+.the-logo {
+  float: left;
+  height: 41px;
+}
+
+.the-menu {
+  float: right;
+  height: 6px;
+  margin-right: 20px;
+  margin-top: 17px;
+}
