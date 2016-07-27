@@ -3,20 +3,10 @@
 
 .content {
   @include horiz-margins;
-  //margin-top: 30px;
   p {clear: both;}
   a:link, a:visited {
-    @include source-sans-bold;
-    margin-left: -4px;
-    padding: 15px 25px 18px 25px;
-    clear: both;
     background-color: #fff;
     color: #000;
-    border: none;
-    border-radius: 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     float: left;
     &:hover, &:active {
       background-color: #000;
@@ -28,6 +18,14 @@
 .button-normal {margin-bottom: 12px;}
 .button-last {margin-bottom: 45px;}
 
+.button-small {
+  @include radius-small;
+}
+.button-large {
+  @include radius-large;
+  font-size: 30px;
+}
+
 .section-label {
   margin-top: 45px;
   margin-bottom: 15px;
@@ -38,13 +36,13 @@
 // The page titles for the help-with sections -- NOT BUTTONS
 .help-title {
   @include source-sans-bold;
+  @include radius-large;
   margin-left: -4px;
   margin-bottom: 45px;
-  padding: 15px 25px 18px 25px;
+  padding: 11px 18px 13px 18px;
   clear: both;
   color: #fff;
   border: none;
-  border-radius: 27px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

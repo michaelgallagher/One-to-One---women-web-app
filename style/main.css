@@ -75,7 +75,7 @@ table {
 ----------------------------------------------------------------------------- */
 body {
   font-family: 'source-sans-regular', Helvetica, Arial, sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures; }
@@ -90,6 +90,20 @@ em {
 body {
   background-color: #f0efee; }
 
+a:link, a:visited {
+  font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+  margin-left: -3px;
+  margin-right: 7px;
+  padding: 11px 18px 13px 18px;
+  clear: both;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; }
+  a:link:hover, a:link:active, a:visited:hover, a:visited:active {
+    background-color: #000;
+    color: #fff; }
+
 /* The page header
 ----------------------------------------------------------------------------- */
 .masthead {
@@ -102,6 +116,13 @@ body {
 	@include breakpoint(huge) {padding: $huge-margin;}
   */
   height: 41px; }
+  .masthead a:link, .masthead a:visited {
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    clear: none; }
+    .masthead a:link:hover, .masthead a:link:active, .masthead a:visited:hover, .masthead a:visited:active {
+      background-color: transparent; }
 
 .the-logo {
   float: left;
@@ -119,6 +140,30 @@ body {
   margin-right: 20px;
   margin-top: 6px; }
 
+/* The footer
+----------------------------------------------------------------------------- */
+.profile-footer {
+  z-index: 100;
+  padding: 10px;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding: $small-margin;}
+	@include breakpoint(medium) {padding: $medium-margin; }
+	@include breakpoint(large) {padding: $large-margin;}
+	@include breakpoint(huge) {padding: $huge-margin;}
+  */
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #fff;
+  border-top: solid 1px #e2e2e2; }
+  .profile-footer a:link, .profile-footer a:visited {
+    background-color: #000;
+    color: #fff; }
+    .profile-footer a:link:hover, .profile-footer a:link:active, .profile-footer a:visited:hover, .profile-footer a:visited:active {
+      background-color: #646464;
+      color: #fff; }
+
 /* The page body
 ----------------------------------------------------------------------------- */
 .content {
@@ -134,17 +179,8 @@ body {
   .content p {
     clear: both; }
   .content a:link, .content a:visited {
-    font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
-    margin-left: -4px;
-    padding: 15px 25px 18px 25px;
-    clear: both;
     background-color: #fff;
     color: #000;
-    border: none;
-    border-radius: 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     float: left; }
     .content a:link:hover, .content a:link:active, .content a:visited:hover, .content a:visited:active {
       background-color: #000;
@@ -156,6 +192,13 @@ body {
 .button-last {
   margin-bottom: 45px; }
 
+.button-small {
+  border-radius: 22px; }
+
+.button-large {
+  border-radius: 28px;
+  font-size: 30px; }
+
 .section-label {
   margin-top: 45px;
   margin-bottom: 15px; }
@@ -164,13 +207,13 @@ body {
 
 .help-title {
   font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+  border-radius: 28px;
   margin-left: -4px;
   margin-bottom: 45px;
-  padding: 15px 25px 18px 25px;
+  padding: 11px 18px 13px 18px;
   clear: both;
   color: #fff;
   border: none;
-  border-radius: 27px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

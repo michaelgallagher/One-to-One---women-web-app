@@ -1,3 +1,23 @@
+@mixin radius-large {border-radius: 28px;}
+@mixin radius-small {border-radius: 22px;}
+
 body {
   background-color: $standard-bg;
+}
+
+a:link, a:visited {
+  @include source-sans-bold;
+  margin-left: -3px;
+  margin-right: 7px;
+  padding: 11px 18px 13px 18px;
+  clear: both;
+  border: none;
+  //border-radius: 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  &:hover, &:active {
+    background-color: #000;
+    color: #fff;
+  }
 }

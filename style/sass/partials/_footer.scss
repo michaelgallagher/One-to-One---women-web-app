@@ -1,0 +1,20 @@
+/* The footer
+----------------------------------------------------------------------------- */
+
+.profile-footer {
+  z-index: 100;
+  @include masthead-margins;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #fff;
+  border-top: solid 1px $grey-4;
+  a:link, a:visited {
+    background-color: #000;
+    color: #fff;
+    &:hover, &:active {
+      background-color: $grey-1;
+      color: #fff;
+    }
+  }
+}

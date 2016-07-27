@@ -4,7 +4,15 @@
 .masthead {
   @include masthead-margins;
   height: 41px;
-  //background-color: red;
+  a:link, a:visited {
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    clear: none;
+    &:hover, &:active {
+      background-color: transparent;
+    }
+  }
 }
 
 .the-logo {
