@@ -40,3 +40,15 @@ $tiny-margin: 30px;
 	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
   */
 }
+
+// negative margins, left and right
+@mixin negative-horiz-margins {
+	margin-left: -$tiny-margin; margin-right: -$tiny-margin;
+	/* -- pull this back in when we build larger sizes
+		 -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {margin-left: -$small-margin; margin-right: -$small-margin;}
+	@include breakpoint(medium) {margin-left: -$medium-margin; margin-right: -$medium-margin;}
+	@include breakpoint(large) {margin-left: -$large-margin; margin-right: -$large-margin;}
+	@include breakpoint(huge) {margin-left: -$huge-margin; margin-right: -$huge-margin;}
+	*/
+}

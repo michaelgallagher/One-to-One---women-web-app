@@ -1,0 +1,109 @@
+/* The forms
+----------------------------------------------------------------------------- */
+
+hr {
+  @include negative-horiz-margins;
+  border: 1px solid $grey-4;
+  margin-bottom: 20px;
+}
+
+
+
+// Form typography -------------------
+
+.the-profile {
+  margin-top: 37px;
+  margin-bottom: 100px;
+}
+
+.form-label {
+  clear: both;
+  float: left;
+}
+
+.required {
+  @include source-sans-italic;
+  color: $grey-2;
+}
+
+
+// Form elements ---------------------
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px 15px 11px;
+  margin: 6px 0 20px 0;
+  display: inline-block;
+  border: 1px solid $grey-4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 21px;
+}
+
+input[type=text], select {@include source-sans-bold;}
+textarea {@include source-sans-regular;}
+
+// figure this out later
+select {
+  background-image: url("assets/select-arrows-1.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+input[type=button] {
+  margin-left: -30px;
+  @include source-sans-regular;
+  width: 100%;
+  padding: 15px 30px 17px;
+  margin: 0 0 -1px 0;
+  display: inline-block;
+  border-top: 1px solid $grey-4;
+  border-bottom: 1px solid $grey-4;
+  border-left: none;
+  border-right: none;
+  background-color: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 28px;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.room-button {
+    margin-left: -30px;
+    @include source-sans-regular;
+    width: 100%;
+    padding: 15px 30px 17px;
+    margin: 0 0 -1px 0;
+    display: inline-block;
+    border-top: 1px solid $grey-4;
+    border-bottom: 1px solid $grey-4;
+    border-left: none;
+    border-right: none;
+    background-color: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: left;
+    cursor: pointer;
+}
+.checkmark-no {
+  height: 50px;
+  margin-top: -6px;
+  margin-bottom: -8px;
+  float: right;
+}
+
+.room-selector {
+  @include negative-horiz-margins;
+}
+
+.room-unselected {
+  background-color: $standard-bg;
+}
+
+.room-selected {
+  background-color: $the-orange;
+}

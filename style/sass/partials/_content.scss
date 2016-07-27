@@ -16,9 +16,16 @@
 }
 
 .section-label {
-  margin-top: 45px;
-  margin-bottom: 15px;
-  p {margin-top: 45px;}
+  margin-top: 30px;
+  margin-bottom: 12px;
+  p {margin-top: 30px;}
+}
+
+.page-title {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  //font-size: 28px;
+  p {margin-top: 30px;}
 }
 
 // The page titles for the help-with sections -- NOT BUTTONS
@@ -26,7 +33,7 @@
   @include source-sans-bold;
   @include radius-large;
   margin-left: -4px;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
   clear: both;
   color: #fff;
   border: none;
