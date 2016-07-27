@@ -15,23 +15,11 @@
   }
 }
 
-.button-normal {margin-bottom: 12px;}
-.button-last {margin-bottom: 45px;}
-
-.button-small {
-  @include radius-small;
-}
-.button-large {
-  @include radius-large;
-  font-size: 30px;
-}
-
 .section-label {
   margin-top: 45px;
   margin-bottom: 15px;
   p {margin-top: 45px;}
 }
-
 
 // The page titles for the help-with sections -- NOT BUTTONS
 .help-title {
@@ -39,7 +27,6 @@
   @include radius-large;
   margin-left: -4px;
   margin-bottom: 45px;
-  padding: 11px 18px 13px 18px;
   clear: both;
   color: #fff;
   border: none;
@@ -48,7 +35,6 @@
   display: inline-block;
   float: left;
 }
-
 
 
 

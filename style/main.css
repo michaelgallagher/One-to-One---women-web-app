@@ -75,8 +75,9 @@ table {
 ----------------------------------------------------------------------------- */
 body {
   font-family: 'source-sans-regular', Helvetica, Arial, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures; }
 
@@ -94,7 +95,6 @@ a:link, a:visited {
   font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
   margin-left: -3px;
   margin-right: 7px;
-  padding: 11px 18px 13px 18px;
   clear: both;
   border: none;
   text-align: center;
@@ -103,6 +103,22 @@ a:link, a:visited {
   a:link:hover, a:link:active, a:visited:hover, a:visited:active {
     background-color: #000;
     color: #fff; }
+
+.button-normal {
+  margin-bottom: 12px; }
+
+.button-last {
+  margin-bottom: 45px; }
+
+.button-small {
+  border-radius: 22px;
+  padding: 12px 21px 14px 21px; }
+
+.button-large {
+  border-radius: 28px;
+  font-size: 27px;
+  letter-spacing: 0;
+  padding: 8px 20px 10px 20px; }
 
 /* The page header
 ----------------------------------------------------------------------------- */
@@ -186,19 +202,6 @@ a:link, a:visited {
       background-color: #000;
       color: #fff; }
 
-.button-normal {
-  margin-bottom: 12px; }
-
-.button-last {
-  margin-bottom: 45px; }
-
-.button-small {
-  border-radius: 22px; }
-
-.button-large {
-  border-radius: 28px;
-  font-size: 30px; }
-
 .section-label {
   margin-top: 45px;
   margin-bottom: 15px; }
@@ -210,7 +213,6 @@ a:link, a:visited {
   border-radius: 28px;
   margin-left: -4px;
   margin-bottom: 45px;
-  padding: 11px 18px 13px 18px;
   clear: both;
   color: #fff;
   border: none;

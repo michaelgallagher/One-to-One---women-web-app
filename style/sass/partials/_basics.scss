@@ -9,10 +9,8 @@ a:link, a:visited {
   @include source-sans-bold;
   margin-left: -3px;
   margin-right: 7px;
-  padding: 11px 18px 13px 18px;
   clear: both;
   border: none;
-  //border-radius: 23px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -20,4 +18,20 @@ a:link, a:visited {
     background-color: #000;
     color: #fff;
   }
+}
+
+// the button modifiers
+
+.button-normal {margin-bottom: 12px;}
+.button-last {margin-bottom: 45px;}
+
+.button-small {
+  @include radius-small;
+  padding: 12px 21px 14px 21px;
+}
+.button-large {
+  @include radius-large;
+  font-size: 27px;
+  letter-spacing: 0;
+  padding: 8px 20px 10px 20px;
 }
