@@ -76,13 +76,16 @@ table {
 body {
   font-family: 'source-sans-regular', Helvetica, Arial, sans-serif;
   font-size: 25px;
-  line-height: 1;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures; }
 
 h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, blockquote, pre {
   font-weight: normal;
   font-size: 1em; }
+
+em {
+  font-family: 'source-sans-bold', Helvetica, Arial, sans-serif; }
 
 body {
   background-color: #f0efee; }
@@ -110,24 +113,29 @@ body {
   margin-right: 20px;
   margin-top: 17px; }
 
+.close-button {
+  float: right;
+  height: 28px;
+  margin-right: 20px;
+  margin-top: 6px; }
+
 /* The page body
 ----------------------------------------------------------------------------- */
 .content {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* -- pull this back in when we build larger sizes
      -- for now, we use the "tiny" size for everything
 	@include breakpoint(small) {padding-left: $small-margin; padding-right: $small-margin}
 	@include breakpoint(medium) {padding-left: $medium-margin; padding-right: $medium-margin}
 	@include breakpoint(large) {padding-left: $large-margin; padding-right: $large-margin}
 	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
-  */
-  margin-top: 30px; }
+  */ }
   .content p {
     clear: both; }
   .content a:link, .content a:visited {
     font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
-    margin-bottom: 12px;
+    margin-left: -4px;
     padding: 15px 25px 18px 25px;
     clear: both;
     background-color: #fff;
@@ -142,12 +150,21 @@ body {
       background-color: #000;
       color: #fff; }
 
+.button-normal {
+  margin-bottom: 12px; }
+
+.button-last {
+  margin-bottom: 45px; }
+
 .section-label {
-  margin-left: 3px;
+  margin-top: 45px;
   margin-bottom: 15px; }
+  .section-label p {
+    margin-top: 45px; }
 
 .help-title {
   font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+  margin-left: -4px;
   margin-bottom: 45px;
   padding: 15px 25px 18px 25px;
   clear: both;

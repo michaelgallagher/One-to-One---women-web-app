@@ -3,11 +3,11 @@
 
 .content {
   @include horiz-margins;
-  margin-top: 30px;
+  //margin-top: 30px;
   p {clear: both;}
   a:link, a:visited {
     @include source-sans-bold;
-    margin-bottom: 12px;
+    margin-left: -4px;
     padding: 15px 25px 18px 25px;
     clear: both;
     background-color: #fff;
@@ -25,16 +25,20 @@
   }
 }
 
+.button-normal {margin-bottom: 12px;}
+.button-last {margin-bottom: 45px;}
 
 .section-label {
-  margin-left: 3px;
+  margin-top: 45px;
   margin-bottom: 15px;
+  p {margin-top: 45px;}
 }
 
 
 // The page titles for the help-with sections -- NOT BUTTONS
 .help-title {
   @include source-sans-bold;
+  margin-left: -4px;
   margin-bottom: 45px;
   padding: 15px 25px 18px 25px;
   clear: both;

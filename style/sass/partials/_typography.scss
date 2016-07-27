@@ -11,7 +11,7 @@
 body {
   @include source-sans-regular;
   font-size: 25px; // set the foundation size to base rem off of
-  line-height: 1;
+  line-height: 1.2;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
 }
@@ -20,3 +20,5 @@ h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, blockquote, pre {
   font-weight: normal;
   font-size: 1em;
 }
+
+em {@include source-sans-bold;}
