@@ -58,9 +58,7 @@
       color: #fff;
     }
   }
-  .help-title {
-    background-color: $the-blue;
-  }
+  .help-title {background-color: $the-blue;}
 }
 
 .bleeding {
@@ -73,9 +71,7 @@
       color: #fff;
     }
   }
-  .help-title {
-    background-color: $the-pink;
-  }
+  .help-title {background-color: $the-pink;}
 }
 
 .baby {
@@ -88,9 +84,7 @@
       color: #fff;
     }
   }
-  .help-title {
-    background-color: $the-purple;
-  }
+  .help-title {background-color: $the-purple;}
 }
 
 .other {
@@ -103,7 +97,29 @@
       color: #fff;
     }
   }
-  .help-title {
-    background-color: $the-orange;
-  }
+  .help-title {background-color: $the-orange;}
+}
+
+
+
+/* Pain face styles
+----------------------------------------------------------------------------- */
+
+.pain-scale {
+  @include negative-horiz-margins;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.pain-wrapper {@include horiz-margins;}
+
+.pain-face {
+  width: 120px;
+  margin-right: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.face {
+  margin-bottom: 5px;
 }

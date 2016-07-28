@@ -91,6 +91,9 @@ h1, h2, h3, h4, h5, h6 {
 em {
   font-family: 'source-sans-bold', Helvetica, Arial, sans-serif; }
 
+.centered {
+  text-align: center; }
+
 body {
   background-color: #f0efee; }
 
@@ -158,6 +161,35 @@ a:link, a:visited {
   height: 28px;
   margin-right: 20px;
   margin-top: 6px; }
+
+.back-button {
+  float: left;
+  margin-top: 8px;
+  margin-left: 15px; }
+  .back-button p {
+    display: inline-block;
+    text-align: left; }
+  .back-button .back-arrow {
+    height: 14px;
+    margin: 4px 8px 0 2px;
+    clear: none;
+    display: inline-block;
+    float: left; }
+  .back-button a:link, .back-button a:visited {
+    font-family: 'source-sans-bold', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 20px;
+    margin: 0;
+    clear: none;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    color: #969696; }
+    .back-button a:link:hover, .back-button a:link:active, .back-button a:visited:hover, .back-button a:visited:active {
+      background-color: transparent;
+      color: #000; }
 
 /* The footer
 ----------------------------------------------------------------------------- */
@@ -275,6 +307,41 @@ a:link, a:visited {
       color: #fff; }
   .other .help-title {
     background-color: #fa7e00; }
+
+/* Pain face styles
+----------------------------------------------------------------------------- */
+.pain-scale {
+  margin-left: -30px;
+  margin-right: -30px;
+  /* -- pull this back in when we build larger sizes
+  	 -- for now, we use the "tiny" size for everything
+  @include breakpoint(small) {margin-left: -$small-margin; margin-right: -$small-margin;}
+  @include breakpoint(medium) {margin-left: -$medium-margin; margin-right: -$medium-margin;}
+  @include breakpoint(large) {margin-left: -$large-margin; margin-right: -$large-margin;}
+  @include breakpoint(huge) {margin-left: -$huge-margin; margin-right: -$huge-margin;}
+  */
+  white-space: nowrap;
+  overflow: scroll; }
+
+.pain-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  /* -- pull this back in when we build larger sizes
+     -- for now, we use the "tiny" size for everything
+	@include breakpoint(small) {padding-left: $small-margin; padding-right: $small-margin}
+	@include breakpoint(medium) {padding-left: $medium-margin; padding-right: $medium-margin}
+	@include breakpoint(large) {padding-left: $large-margin; padding-right: $large-margin}
+	@include breakpoint(huge) {padding-left: $huge-margin; padding-right: $huge-margin}
+  */ }
+
+.pain-face {
+  width: 120px;
+  margin-right: 30px;
+  text-align: center;
+  display: inline-block; }
+
+.face {
+  margin-bottom: 5px; }
 
 /* The forms
 ----------------------------------------------------------------------------- */

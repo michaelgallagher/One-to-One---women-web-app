@@ -33,3 +33,40 @@
   margin-right: 20px;
   margin-top: 6px;
 }
+
+.back-button {
+  float: left;
+  margin-top: 8px;
+  margin-left: 15px;
+  p {
+    //background-color: yellow;
+    display: inline-block;
+    text-align: left;
+  }
+  .back-arrow {
+    //background-color: red;
+    height: 14px;
+    margin: 4px 8px 0 2px;
+    clear: none;
+    display: inline-block;
+    float: left;
+  }
+  a:link, a:visited {
+    @include source-sans-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 20px;
+    margin: 0;
+    clear: none;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    color: $grey-2;
+    &:hover, &:active {
+      background-color:
+      transparent;
+      color: #000;
+    }
+  }
+}
