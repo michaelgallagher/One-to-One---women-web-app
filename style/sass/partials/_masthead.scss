@@ -62,11 +62,11 @@
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    color: $grey-2;
+    color: #000;
     &:hover, &:active {
       background-color:
       transparent;
-      color: #000;
+      color: $grey-2;
     }
   }
 }

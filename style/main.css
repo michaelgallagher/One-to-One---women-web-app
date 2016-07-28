@@ -186,10 +186,10 @@ a:link, a:visited {
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    color: #969696; }
+    color: #000; }
     .back-button a:link:hover, .back-button a:link:active, .back-button a:visited:hover, .back-button a:visited:active {
       background-color: transparent;
-      color: #000; }
+      color: #969696; }
 
 /* The footer
 ----------------------------------------------------------------------------- */
