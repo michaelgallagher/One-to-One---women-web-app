@@ -389,7 +389,6 @@ textarea {
   font-style: normal; }
 
 select {
-  background-image: url("assets/select-arrows-1.svg");
   background-position: right;
   background-repeat: no-repeat;
   padding-right: 10px; }
