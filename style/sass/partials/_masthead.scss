@@ -40,13 +40,14 @@
   margin-left: 15px;
   p {
     //background-color: yellow;
+    @include source-sans-bold;
     display: inline-block;
     text-align: left;
   }
   .back-arrow {
     //background-color: red;
     height: 14px;
-    margin: 4px 8px 0 2px;
+    margin: 5px 8px 0 2px;
     clear: none;
     display: inline-block;
     float: left;
